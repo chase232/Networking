@@ -1,0 +1,8 @@
+.SUFFIXES: .cpp
+
+all:
+	gcc ftp_client.c -o ftp_client
+	gcc ftp_server.c -o ftp_server
+
+clean:
+	/bin/rm -f *.o *~ *.dat core ftp_server ftp_client
